@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #333;
+            background-image: url("https://i.imgur.com/Yus9p8c.jpeg");
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,7 +17,7 @@
             align-items: center;
             min-height: 100vh;
             color: #fff;
-            text-align: pointer;
+            text-align: center;
         }
         
         .container {
@@ -28,6 +28,32 @@
             width: 400px;
             max-width: 100%;
             margin: 20px;
+            /* Apply neon border animation */
+            animation: neon-border 5s infinite alternate;
+            border: 2px solid transparent; /* Initial border to define thickness */
+        }
+
+        @keyframes neon-border {
+            0% {
+                border-color: red;
+                box-shadow: 0 0 10px red, 0 0 20px red, 0 0 30px red;
+            }
+            25% {
+                border-color: green;
+                box-shadow: 0 0 10px green, 0 0 20px green, 0 0 30px green;
+            }
+            50% {
+                border-color: blue;
+                box-shadow: 0 0 10px blue, 0 0 20px blue, 0 0 30px blue;
+            }
+            75% {
+                border-color: yellow;
+                box-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow;
+            }
+            100% {
+                border-color: violet;
+                box-shadow: 0 0 10px violet, 0 0 20px violet, 0 0 30px violet;
+            }
         }
 
         .logo {
@@ -142,7 +168,6 @@
                 padding: 10px;
             }
         }
-
     </style>
 </head>
 <body>
@@ -175,10 +200,10 @@
         </center>
         <div class="info-box">
             <p>Version: 2.0</p>
-            <p>Welcome to the facebook auto reaction Made by joshua Apostol! This tool allows you to send reactions to fb posts</p>
+            <p>Welcome to the facebook auto reaction Modified by Bert Dev This tool allows you to send reactions to fb posts</p>
             <h2>HOW TO USE</h2>
-            <p>➡️USE DUMMY ACCOUNT</p>
-            <p>➡️GET THE COKIE OF DUMMY</p>
+            <p>➡️USE  FB ACCOUNT</p>
+            <p>➡️GET THE COKIE OF ACCOUNT</p>
             <p>➡️GET A COKIE ON KIWI EXTENSION</p>
             <p>➡️USE COKIE DOUGH ENTENSION</p>
             <p>➡️WAIT FOR MORE UPDATE...</p>
@@ -186,7 +211,7 @@
         <center>
         <div class="fb-link">
             <p>visit the developer and message to report any bug's you encountered</p>
-            <a href="https://www.facebook.com/profile.php?id=100088690249020" target="_blank">DEVELOPER FACEBOOK</a>
+            <a href="https://www.facebook.com/profile.php?id=100085903897787" target="_blank">DEVELOPER FACEBOOK</a>
         </div>
         </center>
     </div>
@@ -231,12 +256,12 @@
         window.onload = function() {
             Swal.fire({
                 title: 'FB AUTO REACT!',
-                text: 'welcome to our auto fb react version 2.0 please enjoy this app',
+                text: 'welcome to our auto fb react version 2.0 please enjoy this website',
                 imageUrl: 'https://i.imgur.com/RU8er1E.png',
-                imageWidth: 100,
-                imageHeight: 100,
+                imageWidth: 90,
+                imageHeight: 90,
                 imageAlt: 'Custom Logo',
-                footer: 'Made by Joshua Apostol',
+                footer: 'Modified by Bert Dev',
                 confirmButtonText: 'OK'
             });
         }
